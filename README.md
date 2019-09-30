@@ -1,16 +1,17 @@
-**Backbase QA Assignment**
+# Backbase QA Assignment
 
-**Description**
+##  Description
 
 This assessment is to measure the candidate's knowledge with Git, test cases creation, test reporting and the ability to adapt with automation tools.
 
-**Prerequisites**
+## Prerequisites
+- GitHub account
 
-**Application Under Test**
+## Application Under Test
 
-"BBlog" is a social blogging site (i.e. a Medium.com clone). It uses a custom API for all requests, including authentication.
+"**BBlog**" is a social blogging site (i.e. a Medium.com clone). It uses a custom API for all requests, including authentication.
 
-**General functionality**
+## General functionality
 
 - User Sign-up/Login/Logout (button on settings page)
 - CRUD Articles
@@ -19,7 +20,7 @@ This assessment is to measure the candidate's knowledge with Git, test cases cre
 - Favorite articles
 - Follow other users
 
-**Deliverables**
+## Deliverables
 
 To start, please access the following web page [https://qa-task.backbasecloud.com/](https://qa-task.backbasecloud.com/#/), to access the application you can use username: _**candidatex**_ and password: _**qa-is-cool**_
 
@@ -32,10 +33,9 @@ Based on the previously mentioned general functionality, for **both backend and 
 5. When the assignment is completed please push your deliverables to a **private git repository** with clear instructions on where to find each deliverable and how to run tests
 
 
+## Additional Information
 
-**Additional Information**
-
-**Application Routing Guidelines**
+### Application Routing Guidelines
 
 - Home page (URL: /#/ )
   - List of tags
@@ -55,6 +55,6 @@ Based on the previously mentioned general functionality, for **both backend and 
   - Show basic user info
   - List of articles populated from author's created articles or author's favorite articles
 
-**Application API Specs**
+### Application API Specs
 
 JSON Objects returned by APIs and application endpoints are described in [Specs.md](Specs.md)

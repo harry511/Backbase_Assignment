@@ -1,6 +1,4 @@
-# RealWorld API Spec
-
-## JSON Objects returned by API:
+## JSON Objects returned by API
 
 Make sure the right content type like `Content-Type: application/json; charset=utf-8` is correctly returned.
 
@@ -159,7 +157,7 @@ If a request fails any validations, expect a 422 and errors in the following for
 }
 ```
 
-#### Other status codes:
+#### Other status codes
 
 401 for Unauthorized requests, when a request requires authentication but it isn't provided
 
@@ -168,7 +166,7 @@ If a request fails any validations, expect a 422 and errors in the following for
 404 for Not found requests, when a resource can't be found to fulfill the request
 
 
-## Endpoints:
+## Endpoints
 
 ### Authentication:
 
