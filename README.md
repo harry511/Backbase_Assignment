@@ -2,7 +2,7 @@
 
 ##  Description
 
-This assessment is to measure the candidate's knowledge with Git, test cases creation, test reporting and the ability to adapt with automation tools.
+This assessment’s goal is to measure the candidate's knowledge with Git, test cases creation, test reporting and the ability to adapt with automation tools.
 
 ## Prerequisites
 - GitHub account
