@@ -30,7 +30,7 @@ Based on the previously mentioned general functionality, for **both backend and 
 2. Automate ( **at least two** ) of the previously created test cases (you may use different tools for backend and front-end testing)
 3. Provide a test report for executed test cases
 4. Provide an overall evaluation report for the application (approach, issues, risks, recommendation, why you chose the test cases to automate,etc)
-5. When the assignment is completed please push your deliverables to a **private git repository** with clear instructions on where to find each deliverable and how to run tests
+5. When the assignment is completed please push your deliverables to a **private git repository**. The repository must include clear instructions on where to find each deliverable and how to run tests
 
 
 ## Additional Information
