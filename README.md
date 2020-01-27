@@ -13,7 +13,6 @@ This assessment’s goal is to measure the candidate's knowledge with Git, test 
 
 ## General functionality
 
-- User Sign-up/Login/Logout (button on settings page)
 - CRUD Articles
 - CR*D Comments on articles (no updating required)
 - GET and display paginated lists of articles
