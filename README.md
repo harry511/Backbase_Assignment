@@ -23,15 +23,15 @@ This assessment’s goal is to measure the candidate's knowledge with Git, test 
 
 To start, please access the following web page [https://qa-task.backbasecloud.com/](https://qa-task.backbasecloud.com/#/), to access the application you can use username: _**candidatex**_ and password: _**qa-is-cool**_
 
-Based on the previously mentioned general functionality, for **both backend and front-end** the following is required:
+Based on the previously mentioned general functionality, for **both backend and frontend** the following is required:
 
 1. Create a series of manual test cases that cover **one** functionality that you choose
 2. Automate ( **at least two** ) of the previously created test cases
 3. Provide a test report for executed test cases
-4. Provide an overall evaluation report for the application (approach, issues, risks, recommendation, why you chose the test cases to automate,etc)
+4. Provide an overall evaluation report for the application (approach, issues, risks, recommendation, why you chose the test cases to automate, etc.)
 5. When the assignment is completed please push your deliverables to a **private git repository**. The repository must include clear instructions on where to find each deliverable and how to run tests
 
-_**Note: You may use different tools for backend and front-end automation testing (preferably in Java or JavaScript). Only programmatic tools are accepted so providing only a postman collection (or similar approach) won't be accepted.**_
+_**Note: You may use different tools for backend and frontend automation testing (preferably in Java or JavaScript). Only programmatic tools are accepted so providing only a postman collection (or similar approach) won't be accepted.**_
 
 ## Additional Information
 
