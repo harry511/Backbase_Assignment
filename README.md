@@ -33,7 +33,7 @@ All the functionalities bellow are implemented in the API and Web layers:
 
 ### API layer
 
-The API endpoints and JSON return Objects are described in the [Api Specs.md](api-specs.md) document.
+The API endpoints and JSON return Objects are described in the [Api Specs](api-specs.md) document.
 
 ### Web Layer
 
