@@ -45,9 +45,9 @@ The URLs, user to autenticate and basic functionalities descriptions are placed 
 
 These are the items you must deliver in your assignment
 
-* Create a **document containing a series of manual test cases** that cover one functionality that you choose
-* Create, at least, 2 (two) **automated scripts for API tests** that can be run successfully
-* Create, at least, 2 (two) **automated scripts for Web tests** that can be run successfully
+* Create a **document containing a series of manual test cases** that cover **two functionality** that you choose
+* Create, at least, 2 (two) **automated scripts for API tests** for different functionalities that can be run successfully
+* Create, at least, 2 (two) **automated scripts for Web tests** for different functionalities that can be run successfully
 * Create an **Overall Evaluation Report** for the application containing:
    * the issues found
    * why you chose the test cases to automate
