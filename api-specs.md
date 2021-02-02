@@ -6,9 +6,35 @@ To basic autentication can be done using the following credentials:
 * Username: `candidatex`
 * Password: `qa-is-cool`
 
+List of endpoints
+* Users
+  * [Authentication](#authentication)
+  * [Registration](#registration)
+* User  
+  * [Get Current User](#get-current-user)
+  * [Update User](#update-user)
+* Profiles
+  * [Get Profile](#get-profile)
+  * [Follow user](#follow-user)
+  * [Un-follow user](#un-follow-user)
+* Articles  
+  * [List Articles](#list-articles)
+  * [Feed Articles](#feed-articles)
+  * [Get Article](#get-article)
+  * [Create Article](#create-article)
+  * [Update Article](#update-article)
+  * [Delete Article](#delete-article)
+  * [Add Comments to an Article](#add-comments-to-an-article)
+  * [Get Comments from an Article](#get-comments-from-an-article)
+  * [Delete Comment](#delete-comment)
+  * [Favorite Article](#favorite-article)
+  * [Un-favorite Article](#un-favorite-article)
+* Tags
+  * [Get Tags](#get-tags)
+
 ## Endpoints
 
-### Authentication:
+### Authentication
 
 `POST /api/users/login`
 
@@ -26,7 +52,7 @@ No authentication required, returns a [User](#users-for-authentication)
 Required fields: `email`, `password`
 
 
-### Registration:
+### Registration
 
 `POST /api/users`
 
