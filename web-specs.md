@@ -1,4 +1,4 @@
-# Web URLs
+# Web Specs
 
 You can access the BBlog web page using the following URL: [https://qa-task.backbasecloud.com](https://qa-task.backbasecloud.com)
 
