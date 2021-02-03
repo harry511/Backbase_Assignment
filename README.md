@@ -1,5 +1,20 @@
 # Backbase QA Assignment
 
+* [Description](#description)
+* [Prerequisites to develop the tests](#prerequisites-to-develop-the-tests)
+* [Application Under Test](#application-under-test)
+  * [General functionality](#general-functionality) 
+  * [API layer](#api-layer)
+  * [Web Layer](##web-layer)
+* [Deliverables](#deliverables)
+  * [Must-haves](#must-haves)
+  * [Nice to have](#nice-to-have)
+  * [We will not accept](#we-will-not-accept)
+  * [Additional information](#additional-information)
+* [How to deliver the assignment](how-to-deliver-the-assignment)
+  * [What do you need to deliver to us](#what-do-you-need-to-deliver-to-us)
+  * [How long do I have to deliver the assignment?](#how-long-do-i-have-to-deliver-the-assignment)
+
 ##  Description
 
 This assessment’s goal is to measure the candidate's knowledge of Git, test case creation, test reporting, and the ability to adapt to automation tools.
@@ -58,10 +73,11 @@ These are the items you must deliver in your assignment
    * how to access the generated report
 
 ### Nice to have
-* Framework modules that can demonstrate your skills in the design and implementation of testing frameworks, e.g. layers, design patterns, or other architectural decisions. Please hold the balance of solution complexity vs tasks being solved, do not overengineer
-* CI/CD scripts in any tool (Jenkins, GitHub Actions, GitLab CI, Travis CI, etc..)
-* Toggle for on/off headless execution for the front-end tests
 * Suggestions for improvements
+* Toggle for on/off headless execution for the front-end tests
+* CI/CD scripts in any tool (Jenkins, GitHub Actions, GitLab CI, Travis CI, etc..)
+* Add more tests in addition to mandatory ones that will show us how do you approach test automation, which cases prefer to automate, why
+* Framework modules that can demonstrate your skills in the design and implementation of testing frameworks, e.g. layers, design patterns, or other architectural decisions. Please hold the balance of solution complexity vs tasks being solved, do not overengineer
 
 ### We will not accept
 * Use of record & play tools to generate both API and Web automated tests
