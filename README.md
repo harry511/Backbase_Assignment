@@ -93,9 +93,13 @@ These are the items you must deliver in your assignment
 ### What do you need to deliver to us
 As soon as you finish you must:
 
-* Deliver the assignment in a private GitHub repository (please contact your tech recruiter)
-* Ask the tech recruiter the user you must add as a collaborator, so we can review your assignment
-* You can also attach a zip file of your project, but the GitHub link is also mandatory
+* Deliver the assignment in a private GitHub repository
+  * please, add the following users to your repositories: 
+     * General reviewers: `eliasnogueira` and `asterium`
+     * Your tech recruiter (only one):
+       * Denise: `BackbaseTests`
+       * Adrian: `adriansurapati`
+       * Jakub: `JakJania`
 * Don't forget to tell us where are the documents you created
 
 ### How long do I have to deliver the assignment?
