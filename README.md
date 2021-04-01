@@ -100,6 +100,7 @@ As soon as you finish you must:
        * Denise: `BackbaseTests`
        * Adrian: `adriansurapati`
        * Jakub: `JakJania`
+       * Mandy: `MandyatBackbase`
 * Don't forget to tell us where are the documents you created
 
 ### How long do I have to deliver the assignment?
