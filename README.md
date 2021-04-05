@@ -76,7 +76,8 @@ These are the items you must deliver in your assignment
 * Suggestions for improvements
 * Toggle for on/off headless execution for the front-end tests
 * CI/CD scripts in any tool (Jenkins, GitHub Actions, GitLab CI, Travis CI, etc..)
-* Add more tests in addition to mandatory ones that will show us how do you approach test automation, which cases prefer to automate, why
+* Add more tests in addition to mandatory ones that will show us how do you approach test automation, which cases prefer to automate, why.
+If any of additional tests should be failing because of existing bugs, please mention them explicitly in evaluation report. 
 * Framework modules that can demonstrate your skills in the design and implementation of testing frameworks, e.g. layers, design patterns, or other architectural decisions. Please hold the balance of solution complexity vs tasks being solved, do not overengineer
 
 ### We will not accept
