@@ -95,7 +95,7 @@ If any of additional tests should be failing because of existing bugs, please me
 As soon as you finish you must:
 
 * Deliver the assignment in a private GitHub repository
-  * please, add the following users to your repositories: 
+  * **please, add ALL of the following users to your repositories:** 
      * General reviewers: `eliasnogueira` and `asterium`
      * Your tech recruiter (only one):
        * Denise: `BackbaseTests`
