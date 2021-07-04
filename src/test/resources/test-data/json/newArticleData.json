@@ -1,0 +1,21 @@
+{
+    "article": {
+        "slug": "karate-dsl-bs3esc",
+        "title": "Update Article 1",
+        "description": "Validating Article Update 1",
+        "body": "Create this article to test article update",
+        "createdAt": "2021-06-28T12:52:11.641Z",
+        "updatedAt": "2021-06-29T10:34:40.504Z",
+        "tagList": [
+            "api",
+            "karate"
+        ],
+        "favorited": false,
+        "favoritesCount": 0,
+        "author": {
+            "username": "harry511",
+            "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+            "following": false
+        }
+    }
+}

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Smoke_Suite">
+              <span class="suite-name border-failed">Smoke Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Smoke_Suite">
+                    <span>D:\AutomationWorkspace_0.1\Backbase-QA-assignment\src\test\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Smoke_Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Smoke_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Smoke_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Smoke_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Smoke_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Smoke_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Smoke_Suite" class="hide-methods failed suite-Smoke_Suite"> (hide)</a> <!-- hide-methods failed suite-Smoke_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Suite" class="show-methods failed suite-Smoke_Suite"> (show)</a> <!-- show-methods failed suite-Smoke_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Smoke_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.CommentsSmokeTest" hash-for-method="test004_verifyNewleyAddedComment">test004_verifyNewleyAddedComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.CommentsSmokeTest" hash-for-method="test005_verifyDeleteComment">test005_verifyDeleteComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Smoke_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Smoke_Suite" class="hide-methods passed suite-Smoke_Suite"> (hide)</a> <!-- hide-methods passed suite-Smoke_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Suite" class="show-methods passed suite-Smoke_Suite"> (show)</a> <!-- show-methods passed suite-Smoke_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Smoke_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.ArticlesSmokeTest" hash-for-method="test001_login">test001_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.CommentsSmokeTest" hash-for-method="test001_login">test001_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.ArticlesSmokeTest" hash-for-method="test002_articleCreationAndVerification">test002_articleCreationAndVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.CommentsSmokeTest" hash-for-method="test002_articleCreationAndVerification">test002_articleCreationAndVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.CommentsSmokeTest" hash-for-method="test003_AddNewComment">test003_AddNewComment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.ArticlesSmokeTest" hash-for-method="test003_updateNewleyCreatedArticle">test003_updateNewleyCreatedArticle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.ArticlesSmokeTest" hash-for-method="test004_deleteNewleyCreatedArticle">test004_deleteNewleyCreatedArticle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.ArticlesSmokeTest" hash-for-method="test005_logout">test005_logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Suite" title="com.backbase.ui.tests.CommentsSmokeTest" hash-for-method="test006_logout">test006_logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Smoke_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Smoke_Suite" class="panel Smoke_Suite">
+          <div class="suite-Smoke_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.backbase.ui.tests.CommentsSmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test004_verifyNewleyAddedComment">
+                  </a> <!-- test004_verifyNewleyAddedComment -->
+                  <span class="method-name">test004_verifyNewleyAddedComment</span>
+                  <div class="stack-trace">java.lang.AssertionError: Comments count doesn&apos;t match :  expected [1] but found [0]
+	at com.backbase.ui.tests.CommentsSmokeTest.test004_verifyNewleyAddedComment(CommentsSmokeTest.java:51)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate newley added comment on page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test005_verifyDeleteComment">
+                  </a> <!-- test005_verifyDeleteComment -->
+                  <span class="method-name">test005_verifyDeleteComment</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0] but found [1]
+	at com.backbase.ui.tests.CommentsSmokeTest.test005_verifyDeleteComment(CommentsSmokeTest.java:61)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate delete comment functionlaity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Suite-class-failed -->
+          <div class="suite-Smoke_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.backbase.ui.tests.ArticlesSmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test001_login">
+                  </a> <!-- test001_login -->
+                  <span class="method-name">test001_login</span>
+                  <em>
+(Login to application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test002_articleCreationAndVerification">
+                  </a> <!-- test002_articleCreationAndVerification -->
+                  <span class="method-name">test002_articleCreationAndVerification</span>
+                  <em>
+(Create a new article Aand verify data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test003_updateNewleyCreatedArticle">
+                  </a> <!-- test003_updateNewleyCreatedArticle -->
+                  <span class="method-name">test003_updateNewleyCreatedArticle</span>
+                  <em>
+(Update article created in above step)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test004_deleteNewleyCreatedArticle">
+                  </a> <!-- test004_deleteNewleyCreatedArticle -->
+                  <span class="method-name">test004_deleteNewleyCreatedArticle</span>
+                  <em>
+(Delete article created in above step)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test005_logout">
+                  </a> <!-- test005_logout -->
+                  <span class="method-name">test005_logout</span>
+                  <em>
+(Logouts from the application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Suite-class-passed -->
+          <div class="suite-Smoke_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.backbase.ui.tests.CommentsSmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test001_login">
+                  </a> <!-- test001_login -->
+                  <span class="method-name">test001_login</span>
+                  <em>
+(Login to application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test002_articleCreationAndVerification">
+                  </a> <!-- test002_articleCreationAndVerification -->
+                  <span class="method-name">test002_articleCreationAndVerification</span>
+                  <em>
+(Create a new article Aand verify data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test003_AddNewComment">
+                  </a> <!-- test003_AddNewComment -->
+                  <span class="method-name">test003_AddNewComment</span>
+                  <em>
+(Add comments to newley created post)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test006_logout">
+                  </a> <!-- test006_logout -->
+                  <span class="method-name">test006_logout</span>
+                  <em>
+(Logouts from the application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Suite-class-passed -->
+        </div> <!-- panel Smoke_Suite -->
+        <div panel-name="test-xml-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\AutomationWorkspace_0.1\Backbase-QA-assignment\src\test\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Smoke Suite&quot; parallel=&quot;tests&quot; group-by-instances=&quot;true&quot;&gt;
+  &lt;parameter name=&quot;headless&quot; value=&quot;No&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;env&quot; value=&quot;qa&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ArticlesSmokeTest&quot; parallel=&quot;tests&quot; group-by-instances=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.backbase.ui.tests.ArticlesSmokeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ArticlesSmokeTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CommentsSmokeTest&quot; parallel=&quot;tests&quot; group-by-instances=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.backbase.ui.tests.CommentsSmokeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CommentsSmokeTest --&gt;
+&lt;/suite&gt; &lt;!-- Smoke Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ArticlesSmokeTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CommentsSmokeTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Smoke_Suite');
+function tableData_Smoke_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test001_login')
+data.setCell(0, 2, 'com.backbase.ui.tests.CommentsSmokeTest')
+data.setCell(0, 3, 7297);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test001_login')
+data.setCell(1, 2, 'com.backbase.ui.tests.ArticlesSmokeTest')
+data.setCell(1, 3, 6640);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test004_verifyNewleyAddedComment')
+data.setCell(2, 2, 'com.backbase.ui.tests.CommentsSmokeTest')
+data.setCell(2, 3, 6318);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test005_verifyDeleteComment')
+data.setCell(3, 2, 'com.backbase.ui.tests.CommentsSmokeTest')
+data.setCell(3, 3, 6029);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test003_AddNewComment')
+data.setCell(4, 2, 'com.backbase.ui.tests.CommentsSmokeTest')
+data.setCell(4, 3, 5480);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test003_updateNewleyCreatedArticle')
+data.setCell(5, 2, 'com.backbase.ui.tests.ArticlesSmokeTest')
+data.setCell(5, 3, 2442);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test002_articleCreationAndVerification')
+data.setCell(6, 2, 'com.backbase.ui.tests.ArticlesSmokeTest')
+data.setCell(6, 3, 2212);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test002_articleCreationAndVerification')
+data.setCell(7, 2, 'com.backbase.ui.tests.CommentsSmokeTest')
+data.setCell(7, 3, 1987);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test006_logout')
+data.setCell(8, 2, 'com.backbase.ui.tests.CommentsSmokeTest')
+data.setCell(8, 3, 602);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test004_deleteNewleyCreatedArticle')
+data.setCell(9, 2, 'com.backbase.ui.tests.ArticlesSmokeTest')
+data.setCell(9, 3, 580);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test005_logout')
+data.setCell(10, 2, 'com.backbase.ui.tests.ArticlesSmokeTest')
+data.setCell(10, 3, 483);
+window.suiteTableData['Smoke_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <div id="times-div-Smoke_Suite">
+              </div> <!-- times-div-Smoke_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Smoke Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test005_logout</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Passed... test005_logout()</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test002_articleCreationAndVerification</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Passed... test002_articleCreationAndVerification()</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test001_login</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Title : Conduit</span>
+                <span class="reporter-method-output">Test Passed... test001_login()</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test003_updateNewleyCreatedArticle</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Articl title before update : Such, Such Were the Joys</span>
+                <span class="reporter-method-output">Articl title after update : Updated - Such, Such Were the Joys</span>
+                <span class="reporter-method-output">Test Passed... test003_updateNewleyCreatedArticle()</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test004_deleteNewleyCreatedArticle</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Passed... test004_deleteNewleyCreatedArticle()</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test001_login</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Title : Conduit</span>
+                <span class="reporter-method-output">Test Passed... test001_login()</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test003_AddNewComment</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Passed... test003_AddNewComment()</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test006_logout</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Passed... test006_logout()</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test002_articleCreationAndVerification</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Passed... test002_articleCreationAndVerification()</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test005_verifyDeleteComment</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Failed... test005_verifyDeleteComment()</span>
+                <span class="reporter-method-output">Tests executed are as below:</span>
+                <span class="reporter-method-output"><a href='https://qa-task.backbasecloud.com/article/ah-wilderness-yt7l7c' target='_blank'>https://qa-task.backbasecloud.com/article/ah-wilderness-yt7l7c</a></span>
+                <span class="reporter-method-output">Path in take screenshotD:\AutomationWorkspace_0.1\Backbase-QA-assignment\screenShots\07-05-2021_02-11-27_CommentsSmokeTest.png</span>
+                <span class="reporter-method-output">
+ failure screenshot:</span>
+                <span class="reporter-method-output">
+ FileName:07-05-2021_02-11-27_CommentsSmokeTest.png</span>
+                <span class="reporter-method-output"><img src='D:\AutomationWorkspace_0.1\Backbase-QA-assignment\screenShots\07-05-2021_02-11-27_CommentsSmokeTest.png' target='_blank' ><br>07-05-2021_02-11-27_CommentsSmokeTest.png</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test004_verifyNewleyAddedComment</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Failed... test004_verifyNewleyAddedComment()</span>
+                <span class="reporter-method-output">Tests executed are as below:</span>
+                <span class="reporter-method-output"><a href='https://qa-task.backbasecloud.com/article/ah-wilderness-yt7l7c' target='_blank'>https://qa-task.backbasecloud.com/article/ah-wilderness-yt7l7c</a></span>
+                <span class="reporter-method-output">Path in take screenshotD:\AutomationWorkspace_0.1\Backbase-QA-assignment\screenShots\07-05-2021_02-11-21_CommentsSmokeTest.png</span>
+                <span class="reporter-method-output">
+ failure screenshot:</span>
+                <span class="reporter-method-output">
+ FileName:07-05-2021_02-11-21_CommentsSmokeTest.png</span>
+                <span class="reporter-method-output"><img src='D:\AutomationWorkspace_0.1\Backbase-QA-assignment\screenShots\07-05-2021_02-11-21_CommentsSmokeTest.png' target='_blank' ><br>07-05-2021_02-11-21_CommentsSmokeTest.png</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Smoke_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.CommentsSmokeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite(qa, No, chrome, null)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.ArticlesSmokeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(qa, No, chrome, null, org.testng.TestRunner@58ea606c)</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.CommentsSmokeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(qa, No, chrome, null, org.testng.TestRunner@6f45df59)</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.ArticlesSmokeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test001_login</span>
+                <span class="method-start">2179 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.CommentsSmokeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test001_login</span>
+                <span class="method-start">2189 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.ArticlesSmokeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test002_articleCreationAndVerification</span>
+                <span class="method-start">8823 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.CommentsSmokeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test002_articleCreationAndVerification</span>
+                <span class="method-start">9487 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.ArticlesSmokeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test003_updateNewleyCreatedArticle</span>
+                <span class="method-start">11037 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.CommentsSmokeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test003_AddNewComment</span>
+                <span class="method-start">11476 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.ArticlesSmokeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test004_deleteNewleyCreatedArticle</span>
+                <span class="method-start">13480 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test005_logout</span>
+                <span class="method-start">14061 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14545 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.backbase.ui.tests.CommentsSmokeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test004_verifyNewleyAddedComment</span>
+                <span class="method-start">16956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test005_verifyDeleteComment</span>
+                <span class="method-start">23478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test006_logout</span>
+                <span class="method-start">29644 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30246 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

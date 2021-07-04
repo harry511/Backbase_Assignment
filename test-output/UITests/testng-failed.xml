@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UITests]" parallel="tests">
+  <parameter name="headless" value="No"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="env" value="qa"/>
+  <test thread-count="5" name="Selenium Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.backbase.ui.tests.ArticlesSmokeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="test001_login"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.backbase.ui.tests.ArticlesSmokeTest -->
+    </classes>
+  </test> <!-- Selenium Test(failed) -->
+</suite> <!-- Failed suite [UITests] -->

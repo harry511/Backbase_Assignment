@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [E2E Suite]" parallel="tests">
+  <parameter name="headless" value="No"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="env" value="qa"/>
+  <test thread-count="5" name="CommentsSmokeTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.backbase.ui.tests.CommentsSmokeTest">
+        <methods>
+          <include name="test001_login"/>
+          <include name="test002_articleCreationAndVerification"/>
+          <include name="test004_verifyNewleyAddedComment"/>
+          <include name="setUp"/>
+          <include name="test003_AddNewComment"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.backbase.ui.tests.CommentsSmokeTest -->
+    </classes>
+  </test> <!-- CommentsSmokeTest(failed) -->
+</suite> <!-- Failed suite [E2E Suite] -->
