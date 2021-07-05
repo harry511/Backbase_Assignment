@@ -1,109 +1,62 @@
-# Backbase QA Assignment
+### Backbase-QA-assignment
 
-* [Description](#description)
-* [Prerequisites to develop the tests](#prerequisites-to-develop-the-tests)
-* [Application Under Test](#application-under-test)
-  * [General functionality](#general-functionality) 
-  * [API layer](#api-layer)
-  * [Web Layer](##web-layer)
-* [Deliverables](#deliverables)
-  * [Must-haves](#must-haves)
-  * [Nice to have](#nice-to-have)
-  * [We will not accept](#we-will-not-accept)
-  * [Additional information](#additional-information)
-* [How to deliver the assignment](how-to-deliver-the-assignment)
-  * [What do you need to deliver to us](#what-do-you-need-to-deliver-to-us)
-  * [How long do I have to deliver the assignment?](#how-long-do-i-have-to-deliver-the-assignment)
+## Test Cases File -  `src/test/reports/BackBaseAssignmentTCs_2.pdf` 
+Test case id highligted with yellow are identifed for automation and in which few of them marked as smoke tests
 
-##  Description
+##Open Defects
+![Open Defects](src/test/reports/ExistingDefects.PNG?raw=true "Open Defects")
 
-This assessment’s goal is to measure the candidate's knowledge of Git, test case creation, test reporting, and the ability to adapt to automation tools.
 
-The purpose of this assessment is to show your API and Web testing skills, knowledge in Git, test case creation, testing approach, and reporting, and the ability to adapt with automation tools.
+For API I have used Rest-Assured with Cucumber and for reporting I used Extent Reports
+## Run Both API and UI tests together
+Command to run both API and UI tests together
+```sh
+mvn clean test
+```
+## API Test Execution Steps
+To Run all api related tests mentioned in the framework
+```sh
+mvn -DsomeModule.test.excludes="**/ui/tests/*.*java" test
+```
+To Run specific tests associated with tag use following command
+```sh
+mvn -DsomeModule.test.excludes="**/ui/tests/*.*java" test -Dcucumber.options="--tags @smoke"
+```
 
-We will evaluate the technical test depending on your seniority level by evaluating:
+> API test results report path: `src/test/reports/cucumber_report.html` 
 
-* the test strategy
-* test coverage
-* test cases
-* practices adopted
+Report looks like <Add screenshot>
+![API Report](src/test/reports/API_Report_Preview.PNG?raw=true "API Report")
 
-## Prerequisites to develop the tests
-- GitHub account
 
-## Application Under Test
 
-**BBlog** is a social blogging site (i.e. a Medium.com clone).
-It has an API that uses a custom API for all requests, including authentication and a Web interface that implements the API and enables the final users to use it through a web browser.
+For UI tests I have used testNg with selenium and customized Testng Report by using listners
 
-### General functionality
+## UI Test Execution Steps
+  
+To Run all UI related tests mentioned in the framework
+```sh
+mvn -DsomeModule.test.excludes="**/BackbaseRunnerTest.*java" test
+```
+To pass parameters from build use following command "env","headless","browser", "hub"
+```sh
+mvn -DsomeModule.test.excludes="**/BackbaseRunnerTest.*java" test -Denv="qa" -Dheadless="Yes"
+```
+> UI test results report path: `Backbase-QA-assignment/test-output/index.html` 
 
-All the functionalities bellow are implemented in the API and Web layers:
+> UI test results report path for Emailable report :`Backbase-QA-assignment/test-output/index.html` 
 
-- CRUD Articles
-- CR*D Comments on articles (no updating required)
-- GET and display paginated lists of articles
-- Favorite articles
-- Follow other users
+Report looks like <Add screenshot>
+## UI Detailed Report
+![UI Report](src/test/reports/TestNGReportPrecview1.PNG?raw=true "UI Report")
 
-### API layer
+## UI Emailable Report
+![UI Report](src/test/reports/TestNGReportPreview2.PNG?raw=true "UI Emailable Report")
 
-The API endpoints and JSON return Objects are described in the [Api Specs](api-specs.md) document.
+## Recommendation and Enhancements
+- Currently for test data we have used Faker library, instead of this we create metdata for all objects and we can leverage serialization and deserialization
+- We can enhance reproting part of UI tests
+- Right now we have used high level logging across the framework, we can add low level logging to make it more easy for debugging
+- We can add docker setup to run UI scripts on dockerized grid
 
-### Web Layer
 
-The URLs, user to autenticate and basic functionalities descriptions are placed in the [Web Specs](web-specs.md) document.
-
-## Deliverables
-
-### Must-haves
-
-These are the items you must deliver in your assignment
-
-* Create a **document containing a series of manual test cases** that cover **two functionality** that you choose
-* Create, at least, 2 (two) **automated scripts for API tests** for different functionalities that can be run successfully
-* Create, at least, 2 (two) **automated scripts for Web tests** for different functionalities that can be run successfully
-* Create an **Overall Evaluation Report** for the application containing:
-   * the issues found
-   * why you chose the test cases to automate
-   * any other additional information you would like to add, e.g. risks, recommendations, approach, etc.
-* An **automatic test report** that must be generated after the tests run 
-* Clear **README** file containing:
-   * how to run the test cases/suite (assume the reader does not know your coding language)
-   * how to access the generated report
-
-### Nice to have
-* Suggestions for improvements
-* Toggle for on/off headless execution for the front-end tests
-* CI/CD scripts in any tool (Jenkins, GitHub Actions, GitLab CI, Travis CI, etc..)
-* Add more tests in addition to mandatory ones that will show us how do you approach test automation, which cases prefer to automate, why.
-If any of additional tests should be failing because of existing bugs, please mention them explicitly in evaluation report. 
-* Framework modules that can demonstrate your skills in the design and implementation of testing frameworks, e.g. layers, design patterns, or other architectural decisions. Please hold the balance of solution complexity vs tasks being solved, do not overengineer
-
-### We will not accept
-* Use of record & play tools to generate both API and Web automated tests
-* Deliver the API part with no code. Ex: Postman collections, Karate specifications, etc...
-
-### Additional information
-* Candidates that do not deliver all the **Must haves** will be automatically rejected
-* You can either create only one project for the API and Web part. If you decide to create separate projects you must send both links
-* You can use any programming language you like but as we work with Java and Javascript we would appreciate the tech assignment in one of these
-
-## How to deliver the assignment
-
-### What do you need to deliver to us
-As soon as you finish you must:
-
-* Deliver the assignment in a private GitHub repository
-  * **please, add ALL of the following users to your repositories:** 
-     * General reviewers: `eliasnogueira` and `asterium`
-     * Your tech recruiter (only one):
-       * Denise: `BackbaseTests`
-       * Adrian: `adriansurapati`
-       * Jakub: `JakJania`
-       * Mandy: `MandyatBackbase`
-* Don't forget to tell us where are the documents you created
-
-### How long do I have to deliver the assignment?
-
-* You can allocate as much time as needed, however focus on delivering your solution within 7 days from the moment of receiving the assignment. If more time is needed, please reach out to discuss the deadline
